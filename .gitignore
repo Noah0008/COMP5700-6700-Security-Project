@@ -1,0 +1,5 @@
+comp5700-6700-venv/
+__pycache__/
+*.pyc
+*.pdf
+llm_logs.txt
