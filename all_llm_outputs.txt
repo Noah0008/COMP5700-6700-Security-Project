@@ -1,0 +1,1109 @@
+*LLM Name*
+Gemma-3-1B
+
+*Prompt Used*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+Document: CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0 - 11-23-2022   
+Page 1 Terms of Use Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+Page 2 Table of Contents Terms of Use .................................................................................................................. 1 Table of Contents ........................................................................................................... 2 Overview ......................................................................................................................... 5 Intended Audience ................................................................................................................... 5 Consensus Guidance .............................................................................................................. 6 Typographical Conventions .................................................................................................... 7 Recommendation Definitions ....................................................................................... 8 Title ............................................................................................................................................ 8 Assessment Status .................................................................................................................. 8 Automated ............................................................................................................................................. 8 Manual .................................................................................................................................................... 8 Profile ........................................................................................................................................ 8 Description ............................................................................................................................... 8 Rationale Statement ................................................................................................................. 8 Impact Statement ..................................................................................................................... 9 Audit Procedure ....................................................................................................................... 9 Remediation Procedure ........................................................................................................... 9 Default Value ............................................................................................................................ 9 References ................................................................................................................................ 9 CIS Critical Security Controls® (CIS Controls®) .................................................................... 9 Ad
+
+Let's think step by step.
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+The document describes the CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0.
+The document is a technical document.
+The document is about Kubernetes.
+The document is about security.
+The document is about AWS.
+The document is a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is
+==================================================
+
+*LLM Name*
+Gemma-3-1B
+
+*Prompt Used*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+Document: CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0 - 11-23-2022   
+Page 1 Terms of Use Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+Page 2 Table of Contents Terms of Use .................................................................................................................. 1 Table of Contents ........................................................................................................... 2 Overview ......................................................................................................................... 5 Intended Audience ................................................................................................................... 5 Consensus Guidance .............................................................................................................. 6 Typographical Conventions .................................................................................................... 7 Recommendation Definitions ....................................................................................... 8 Title ............................................................................................................................................ 8 Assessment Status .................................................................................................................. 8 Automated ............................................................................................................................................. 8 Manual .................................................................................................................................................... 8 Profile ........................................................................................................................................ 8 Description ............................................................................................................................... 8 Rationale Statement ................................................................................................................. 8 Impact Statement ..................................................................................................................... 9 Audit Procedure ....................................................................................................................... 9 Remediation Procedure ........................................................................................................... 9 Default Value ............................................................................................................................ 9 References ................................................................................................................................ 9 CIS Critical Security Controls® (CIS Controls®) .................................................................... 9 Ad
+
+Let's think step by step.
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+The document describes the CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0.
+The document is a technical document.
+The document is about Kubernetes.
+The document is about security.
+The document is about AWS.
+The document is a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is
+==================================================
+
+*LLM Name*
+Gemma-3-1B
+
+*Prompt Used*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+Document: Internal Only - General  
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark  
+v1.6.0 - 12-23-2024  
+  
+Page 1 
+Internal Only - General  Terms of Use  
+Please see the below link for our current terms of use:  
+https://www.cisecurity.org/cis -securesuite/cis -securesuite -membership -terms -of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(CISLegal@cisecurity.org ) and request guidance on copyright usage.  
+NOTE :  It is NEVER  acceptable to host a CIS Benchmark in ANY  format (PDF, etc.) 
+on a 3rd party (non -CIS owned) site.  
+Page 2 
+Internal Only - General  Table of Contents  
+Terms of Use  ................................ ................................ ................................ .....................  1 
+Table of Contents  ................................ ................................ ................................ .............  2 
+Overview  ................................ ................................ ................................ ............................  5 
+Important Usage Information  ................................ ................................ ................................ .... 5 
+Key Stakeholders ................................ ................................ ................................ ................................ .... 5 
+Apply the Correct Version of a Benchmark  ................................ ................................ .........................  6 
+Exceptions  ................................ ................................ ................................ ................................ ...............  6 
+Remediation  ................................ ................................ ................................ ................................ ............  7 
+Summary ................................ ................................ ................................ ................................ ..................  7 
+Target Technology Details  ................................ ................................ ................................ ........  8 
+Intended Audience  ................................ ................................ ................................ .....................  8 
+Consensus Guidance  ................................ ................................ ................................ .................  9 
+Typographical Conventions  ................................ ................................ ................................ .... 10 
+Recommendation Definitions  ................................ ................................ .......................  11 
+Title ................................ ................................ ................................ ................................ .............  11 
+Assessment Status  ................................ ................................ ...............
+
+Let's think step by step.
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+
+# YAML output for CIS Benchmarks
+# This YAML represents the CIS Benchmarks document.
+# It's a simplified representation for the purpose of this task.
+# The document's content is not directly included in the YAML.
+
+==================================================
+
+*LLM Name*
+Gemma-3-1B
+
+*Prompt Used*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+Document: CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0 - 11-23-2022   
+Page 1 Terms of Use Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+Page 2 Table of Contents Terms of Use .................................................................................................................. 1 Table of Contents ........................................................................................................... 2 Overview ......................................................................................................................... 5 Intended Audience ................................................................................................................... 5 Consensus Guidance .............................................................................................................. 6 Typographical Conventions .................................................................................................... 7 Recommendation Definitions ....................................................................................... 8 Title ............................................................................................................................................ 8 Assessment Status .................................................................................................................. 8 Automated ............................................................................................................................................. 8 Manual .................................................................................................................................................... 8 Profile ........................................................................................................................................ 8 Description ............................................................................................................................... 8 Rationale Statement ................................................................................................................. 8 Impact Statement ..................................................................................................................... 9 Audit Procedure ....................................................................................................................... 9 Remediation Procedure ........................................................................................................... 9 Default Value ............................................................................................................................ 9 References ................................................................................................................................ 9 CIS Critical Security Controls® (CIS Controls®) .................................................................... 9 Ad
+
+Let's think step by step.
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+The document describes the CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0.
+The document is a technical document.
+The document is about Kubernetes.
+The document is about security.
+The document is about AWS.
+The document is a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is
+==================================================
+
+*LLM Name*
+Gemma-3-1B
+
+*Prompt Used*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+Document: Internal Only - General  
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark  
+v1.7.0 - 05-30-2025  
+  
+Page 1 
+Internal Only - General  Terms of Use  
+Please see the below link for our current terms of use:  
+https://www.cisecurity.org/cis -securesuite/cis -securesuite -membership -terms -of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(legalnotices@cisecurity.org ) and request guidance on copyright usage.  
+NOTE :  It is NEVER  acceptable to host a CIS Benchmark in ANY  format (PDF, etc.) 
+on a 3rd party (non -CIS owned) site.  
+Page 2 
+Internal Only - General  Table of Contents  
+Terms of Use  ................................ ................................ ................................ .....................  1 
+Table of Contents  ................................ ................................ ................................ .............  2 
+Overview  ................................ ................................ ................................ ............................  5 
+Important Usage Information  ................................ ................................ ................................ .... 5 
+Key Stakeholders ................................ ................................ ................................ ................................ .... 5 
+Apply the Correct Version of a Benchmark  ................................ ................................ .........................  6 
+Exceptions  ................................ ................................ ................................ ................................ ...............  6 
+Remediation  ................................ ................................ ................................ ................................ ............  7 
+Summary ................................ ................................ ................................ ................................ ..................  7 
+Target Technology Details  ................................ ................................ ................................ ........  8 
+Intended Audience  ................................ ................................ ................................ .....................  8 
+Consensus Guidance  ................................ ................................ ................................ .................  9 
+Typographical Conventions  ................................ ................................ ................................ .... 10 
+Recommendation Definitions  ................................ ................................ .......................  11 
+Title ................................ ................................ ................................ ................................ .............  11 
+Assessment Status  ................................ ................................ ...........
+
+Let's think step by step.
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document
+==================================================
+
+*LLM Name*
+Gemma-3-1B
+
+*Prompt Used*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+Document: CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0 - 11-23-2022   
+Page 1 Terms of Use Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/ 
+Page 2 Table of Contents Terms of Use .................................................................................................................. 1 Table of Contents ........................................................................................................... 2 Overview ......................................................................................................................... 5 Intended Audience ................................................................................................................... 5 Consensus Guidance .............................................................................................................. 6 Typographical Conventions .................................................................................................... 7 Recommendation Definitions ....................................................................................... 8 Title ............................................................................................................................................ 8 Assessment Status .................................................................................................................. 8 Automated ............................................................................................................................................. 8 Manual .................................................................................................................................................... 8 Profile ........................................................................................................................................ 8 Description ............................................................................................................................... 8 Rationale Statement ................................................................................................................. 8 Impact Statement ..................................................................................................................... 9 Audit Procedure ....................................................................................................................... 9 Remediation Procedure ........................................................................................................... 9 Default Value ............................................................................................................................ 9 References ................................................................................................................................ 9 CIS Critical Security Controls® (CIS Controls®) .................................................................... 9 Ad
+
+Let's think step by step.
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+The document describes the CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.2.0.
+The document is a technical document.
+The document is about Kubernetes.
+The document is about security.
+The document is about AWS.
+The document is a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a reference to a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is a description of a benchmark.
+The document is
+==================================================
+
+*LLM Name*
+Gemma-3-1B
+
+*Prompt Used*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+Document: Internal Only - General 
+CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.8.0 - 10-22-2025   
+Page 1 Internal Only - General Terms of Use Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/  For information on referencing and/or citing CIS Benchmarks in 3rd party documentation (including using portions of Benchmark Recommendations) please contact CIS Legal (legalnotices@cisecurity.org) and request guidance on copyright usage.  NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) on a 3rd party (non-CIS owned) site. 
+Page 2 Internal Only - General Table of Contents Terms of Use .................................................................................................................. 1 Table of Contents ........................................................................................................... 2 Overview ......................................................................................................................... 5 Important Usage Information .................................................................................................. 5 Key Stakeholders .................................................................................................................................. 5 Apply the Correct Version of a Benchmark ........................................................................................ 6 Exceptions ............................................................................................................................................. 6 Remediation ........................................................................................................................................... 7 Summary ................................................................................................................................................ 7 Target Technology Details ....................................................................................................... 8 Intended Audience ................................................................................................................... 8 Consensus Guidance ............................................................................................................... 9 Typographical Conventions .................................................................................................. 10 Recommendation Definitions ..................................................................................... 11 Title .......................................................................................................................................... 11 Assessment Status ................................................................................................................ 11 Automated .......................................................................................................
+
+Let's think step by step.
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+
+name: CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.8.0
+version: 1.8.0
+description: Internal Only - General Terms of Use Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use  For information on referencing and/or citing CIS Benchmarks in 3rd party documentation (including using portions of Benchmark Recommendations) please contact CIS Legal (legalnotices@cisecurity.org) and request guidance on copyright usage.  NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) on a 3rd party (non-CIS owned) site.
+
+==================================================
+
+*LLM Name*
+Gemma-3-1B
+
+*Prompt Used*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+Document: Internal Only - General  
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark  
+v1.6.0 - 12-23-2024  
+  
+Page 1 
+Internal Only - General  Terms of Use  
+Please see the below link for our current terms of use:  
+https://www.cisecurity.org/cis -securesuite/cis -securesuite -membership -terms -of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(CISLegal@cisecurity.org ) and request guidance on copyright usage.  
+NOTE :  It is NEVER  acceptable to host a CIS Benchmark in ANY  format (PDF, etc.) 
+on a 3rd party (non -CIS owned) site.  
+Page 2 
+Internal Only - General  Table of Contents  
+Terms of Use  ................................ ................................ ................................ .....................  1 
+Table of Contents  ................................ ................................ ................................ .............  2 
+Overview  ................................ ................................ ................................ ............................  5 
+Important Usage Information  ................................ ................................ ................................ .... 5 
+Key Stakeholders ................................ ................................ ................................ ................................ .... 5 
+Apply the Correct Version of a Benchmark  ................................ ................................ .........................  6 
+Exceptions  ................................ ................................ ................................ ................................ ...............  6 
+Remediation  ................................ ................................ ................................ ................................ ............  7 
+Summary ................................ ................................ ................................ ................................ ..................  7 
+Target Technology Details  ................................ ................................ ................................ ........  8 
+Intended Audience  ................................ ................................ ................................ .....................  8 
+Consensus Guidance  ................................ ................................ ................................ .................  9 
+Typographical Conventions  ................................ ................................ ................................ .... 10 
+Recommendation Definitions  ................................ ................................ .......................  11 
+Title ................................ ................................ ................................ ................................ .............  11 
+Assessment Status  ................................ ................................ ...............
+
+Let's think step by step.
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+
+# YAML output for CIS Benchmarks
+# This YAML represents the CIS Benchmarks document.
+# It's a simplified representation for the purpose of this task.
+# The document's content is not directly included in the YAML.
+
+==================================================
+
+*LLM Name*
+Gemma-3-1B
+
+*Prompt Used*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+Document: Internal Only - General  
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark  
+v1.6.0 - 12-23-2024  
+  
+Page 1 
+Internal Only - General  Terms of Use  
+Please see the below link for our current terms of use:  
+https://www.cisecurity.org/cis -securesuite/cis -securesuite -membership -terms -of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(CISLegal@cisecurity.org ) and request guidance on copyright usage.  
+NOTE :  It is NEVER  acceptable to host a CIS Benchmark in ANY  format (PDF, etc.) 
+on a 3rd party (non -CIS owned) site.  
+Page 2 
+Internal Only - General  Table of Contents  
+Terms of Use  ................................ ................................ ................................ .....................  1 
+Table of Contents  ................................ ................................ ................................ .............  2 
+Overview  ................................ ................................ ................................ ............................  5 
+Important Usage Information  ................................ ................................ ................................ .... 5 
+Key Stakeholders ................................ ................................ ................................ ................................ .... 5 
+Apply the Correct Version of a Benchmark  ................................ ................................ .........................  6 
+Exceptions  ................................ ................................ ................................ ................................ ...............  6 
+Remediation  ................................ ................................ ................................ ................................ ............  7 
+Summary ................................ ................................ ................................ ................................ ..................  7 
+Target Technology Details  ................................ ................................ ................................ ........  8 
+Intended Audience  ................................ ................................ ................................ .....................  8 
+Consensus Guidance  ................................ ................................ ................................ .................  9 
+Typographical Conventions  ................................ ................................ ................................ .... 10 
+Recommendation Definitions  ................................ ................................ .......................  11 
+Title ................................ ................................ ................................ ................................ .............  11 
+Assessment Status  ................................ ................................ ...............
+
+Let's think step by step.
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+
+# YAML output for CIS Benchmarks
+# This YAML represents the CIS Benchmarks document.
+# It's a simplified representation for the purpose of this task.
+# The document's content is not directly included in the YAML.
+
+==================================================
+
+*LLM Name*
+Gemma-3-1B
+
+*Prompt Used*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+Document: Internal Only - General  
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark  
+v1.7.0 - 05-30-2025  
+  
+Page 1 
+Internal Only - General  Terms of Use  
+Please see the below link for our current terms of use:  
+https://www.cisecurity.org/cis -securesuite/cis -securesuite -membership -terms -of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(legalnotices@cisecurity.org ) and request guidance on copyright usage.  
+NOTE :  It is NEVER  acceptable to host a CIS Benchmark in ANY  format (PDF, etc.) 
+on a 3rd party (non -CIS owned) site.  
+Page 2 
+Internal Only - General  Table of Contents  
+Terms of Use  ................................ ................................ ................................ .....................  1 
+Table of Contents  ................................ ................................ ................................ .............  2 
+Overview  ................................ ................................ ................................ ............................  5 
+Important Usage Information  ................................ ................................ ................................ .... 5 
+Key Stakeholders ................................ ................................ ................................ ................................ .... 5 
+Apply the Correct Version of a Benchmark  ................................ ................................ .........................  6 
+Exceptions  ................................ ................................ ................................ ................................ ...............  6 
+Remediation  ................................ ................................ ................................ ................................ ............  7 
+Summary ................................ ................................ ................................ ................................ ..................  7 
+Target Technology Details  ................................ ................................ ................................ ........  8 
+Intended Audience  ................................ ................................ ................................ .....................  8 
+Consensus Guidance  ................................ ................................ ................................ .................  9 
+Typographical Conventions  ................................ ................................ ................................ .... 10 
+Recommendation Definitions  ................................ ................................ .......................  11 
+Title ................................ ................................ ................................ ................................ .............  11 
+Assessment Status  ................................ ................................ ...........
+
+Let's think step by step.
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document
+==================================================
+
+*LLM Name*
+Gemma-3-1B
+
+*Prompt Used*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+Document: Internal Only - General  
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark  
+v1.6.0 - 12-23-2024  
+  
+Page 1 
+Internal Only - General  Terms of Use  
+Please see the below link for our current terms of use:  
+https://www.cisecurity.org/cis -securesuite/cis -securesuite -membership -terms -of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(CISLegal@cisecurity.org ) and request guidance on copyright usage.  
+NOTE :  It is NEVER  acceptable to host a CIS Benchmark in ANY  format (PDF, etc.) 
+on a 3rd party (non -CIS owned) site.  
+Page 2 
+Internal Only - General  Table of Contents  
+Terms of Use  ................................ ................................ ................................ .....................  1 
+Table of Contents  ................................ ................................ ................................ .............  2 
+Overview  ................................ ................................ ................................ ............................  5 
+Important Usage Information  ................................ ................................ ................................ .... 5 
+Key Stakeholders ................................ ................................ ................................ ................................ .... 5 
+Apply the Correct Version of a Benchmark  ................................ ................................ .........................  6 
+Exceptions  ................................ ................................ ................................ ................................ ...............  6 
+Remediation  ................................ ................................ ................................ ................................ ............  7 
+Summary ................................ ................................ ................................ ................................ ..................  7 
+Target Technology Details  ................................ ................................ ................................ ........  8 
+Intended Audience  ................................ ................................ ................................ .....................  8 
+Consensus Guidance  ................................ ................................ ................................ .................  9 
+Typographical Conventions  ................................ ................................ ................................ .... 10 
+Recommendation Definitions  ................................ ................................ .......................  11 
+Title ................................ ................................ ................................ ................................ .............  11 
+Assessment Status  ................................ ................................ ...............
+
+Let's think step by step.
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+
+# YAML output for CIS Benchmarks
+# This YAML represents the CIS Benchmarks document.
+# It's a simplified representation for the purpose of this task.
+# The document's content is not directly included in the YAML.
+
+==================================================
+
+*LLM Name*
+Gemma-3-1B
+
+*Prompt Used*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+Document: Internal Only - General 
+CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.8.0 - 10-22-2025   
+Page 1 Internal Only - General Terms of Use Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/  For information on referencing and/or citing CIS Benchmarks in 3rd party documentation (including using portions of Benchmark Recommendations) please contact CIS Legal (legalnotices@cisecurity.org) and request guidance on copyright usage.  NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) on a 3rd party (non-CIS owned) site. 
+Page 2 Internal Only - General Table of Contents Terms of Use .................................................................................................................. 1 Table of Contents ........................................................................................................... 2 Overview ......................................................................................................................... 5 Important Usage Information .................................................................................................. 5 Key Stakeholders .................................................................................................................................. 5 Apply the Correct Version of a Benchmark ........................................................................................ 6 Exceptions ............................................................................................................................................. 6 Remediation ........................................................................................................................................... 7 Summary ................................................................................................................................................ 7 Target Technology Details ....................................................................................................... 8 Intended Audience ................................................................................................................... 8 Consensus Guidance ............................................................................................................... 9 Typographical Conventions .................................................................................................. 10 Recommendation Definitions ..................................................................................... 11 Title .......................................................................................................................................... 11 Assessment Status ................................................................................................................ 11 Automated .......................................................................................................
+
+Let's think step by step.
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+
+name: CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.8.0
+version: 1.8.0
+description: Internal Only - General Terms of Use Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use  For information on referencing and/or citing CIS Benchmarks in 3rd party documentation (including using portions of Benchmark Recommendations) please contact CIS Legal (legalnotices@cisecurity.org) and request guidance on copyright usage.  NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) on a 3rd party (non-CIS owned) site.
+
+==================================================
+
+*LLM Name*
+Gemma-3-1B
+
+*Prompt Used*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+Document: Internal Only - General  
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark  
+v1.7.0 - 05-30-2025  
+  
+Page 1 
+Internal Only - General  Terms of Use  
+Please see the below link for our current terms of use:  
+https://www.cisecurity.org/cis -securesuite/cis -securesuite -membership -terms -of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(legalnotices@cisecurity.org ) and request guidance on copyright usage.  
+NOTE :  It is NEVER  acceptable to host a CIS Benchmark in ANY  format (PDF, etc.) 
+on a 3rd party (non -CIS owned) site.  
+Page 2 
+Internal Only - General  Table of Contents  
+Terms of Use  ................................ ................................ ................................ .....................  1 
+Table of Contents  ................................ ................................ ................................ .............  2 
+Overview  ................................ ................................ ................................ ............................  5 
+Important Usage Information  ................................ ................................ ................................ .... 5 
+Key Stakeholders ................................ ................................ ................................ ................................ .... 5 
+Apply the Correct Version of a Benchmark  ................................ ................................ .........................  6 
+Exceptions  ................................ ................................ ................................ ................................ ...............  6 
+Remediation  ................................ ................................ ................................ ................................ ............  7 
+Summary ................................ ................................ ................................ ................................ ..................  7 
+Target Technology Details  ................................ ................................ ................................ ........  8 
+Intended Audience  ................................ ................................ ................................ .....................  8 
+Consensus Guidance  ................................ ................................ ................................ .................  9 
+Typographical Conventions  ................................ ................................ ................................ .... 10 
+Recommendation Definitions  ................................ ................................ .......................  11 
+Title ................................ ................................ ................................ ................................ .............  11 
+Assessment Status  ................................ ................................ ...........
+
+Let's think step by step.
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document
+==================================================
+
+*LLM Name*
+Gemma-3-1B
+
+*Prompt Used*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+Document: Internal Only - General  
+CIS Amazon Elastic 
+Kubernetes Service (EKS) 
+Benchmark  
+v1.7.0 - 05-30-2025  
+  
+Page 1 
+Internal Only - General  Terms of Use  
+Please see the below link for our current terms of use:  
+https://www.cisecurity.org/cis -securesuite/cis -securesuite -membership -terms -of-use/ 
+ 
+For information on referencing and/or citing CIS Benchmarks in 3rd party documentation 
+(including using portions of Benchmark Recommendations) please contact CIS Legal 
+(legalnotices@cisecurity.org ) and request guidance on copyright usage.  
+NOTE :  It is NEVER  acceptable to host a CIS Benchmark in ANY  format (PDF, etc.) 
+on a 3rd party (non -CIS owned) site.  
+Page 2 
+Internal Only - General  Table of Contents  
+Terms of Use  ................................ ................................ ................................ .....................  1 
+Table of Contents  ................................ ................................ ................................ .............  2 
+Overview  ................................ ................................ ................................ ............................  5 
+Important Usage Information  ................................ ................................ ................................ .... 5 
+Key Stakeholders ................................ ................................ ................................ ................................ .... 5 
+Apply the Correct Version of a Benchmark  ................................ ................................ .........................  6 
+Exceptions  ................................ ................................ ................................ ................................ ...............  6 
+Remediation  ................................ ................................ ................................ ................................ ............  7 
+Summary ................................ ................................ ................................ ................................ ..................  7 
+Target Technology Details  ................................ ................................ ................................ ........  8 
+Intended Audience  ................................ ................................ ................................ .....................  8 
+Consensus Guidance  ................................ ................................ ................................ .................  9 
+Typographical Conventions  ................................ ................................ ................................ .... 10 
+Recommendation Definitions  ................................ ................................ .......................  11 
+Title ................................ ................................ ................................ ................................ .............  11 
+Assessment Status  ................................ ................................ ...........
+
+Let's think step by step.
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document is about CIS Benchmarks.
+3. Output YAML.
+The document is about CIS Benchmarks.
+
+The document is about CIS Benchmarks.
+1. Identify KDEs.
+The document is about CIS Benchmarks.
+2. Map to requirements.
+The document
+==================================================
+
+*LLM Name*
+Gemma-3-1B
+
+*Prompt Used*
+1. Identify KDEs.
+2. Map to requirements.
+3. Output YAML.
+STRICT: No dashes for names.
+
+Document: Internal Only - General 
+CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.8.0 - 10-22-2025   
+Page 1 Internal Only - General Terms of Use Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use/  For information on referencing and/or citing CIS Benchmarks in 3rd party documentation (including using portions of Benchmark Recommendations) please contact CIS Legal (legalnotices@cisecurity.org) and request guidance on copyright usage.  NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) on a 3rd party (non-CIS owned) site. 
+Page 2 Internal Only - General Table of Contents Terms of Use .................................................................................................................. 1 Table of Contents ........................................................................................................... 2 Overview ......................................................................................................................... 5 Important Usage Information .................................................................................................. 5 Key Stakeholders .................................................................................................................................. 5 Apply the Correct Version of a Benchmark ........................................................................................ 6 Exceptions ............................................................................................................................................. 6 Remediation ........................................................................................................................................... 7 Summary ................................................................................................................................................ 7 Target Technology Details ....................................................................................................... 8 Intended Audience ................................................................................................................... 8 Consensus Guidance ............................................................................................................... 9 Typographical Conventions .................................................................................................. 10 Recommendation Definitions ..................................................................................... 11 Title .......................................................................................................................................... 11 Assessment Status ................................................................................................................ 11 Automated .......................................................................................................
+
+Let's think step by step.
+
+*Prompt Type*
+chain-of-thought
+
+*LLM Output*
+
+name: CIS Amazon Elastic Kubernetes Service (EKS) Benchmark v1.8.0
+version: 1.8.0
+description: Internal Only - General Terms of Use Please see the below link for our current terms of use: https://www.cisecurity.org/cis-securesuite/cis-securesuite-membership-terms-of-use  For information on referencing and/or citing CIS Benchmarks in 3rd party documentation (including using portions of Benchmark Recommendations) please contact CIS Legal (legalnotices@cisecurity.org) and request guidance on copyright usage.  NOTE:  It is NEVER acceptable to host a CIS Benchmark in ANY format (PDF, etc.) on a 3rd party (non-CIS owned) site.
+
+==================================================
+

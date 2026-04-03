@@ -1,99 +1,202 @@
 import os
-import pdfplumber
 import yaml
+import PyPDF2
+import unittest
 import torch
 from transformers import pipeline
+from unittest.mock import patch, mock_open, MagicMock
 
-class SecurityRequirementsExtractor:
-    def __init__(self, model_id="google/gemma-3-1b-it"):
-        """
-        Initialize the LLM pipeline for Gemma-3.
-        The device_map="auto" will automatically handle CPU/GPU allocation.
-        """
-        print(f"Loading model: {model_id}...")
-        self.generator = pipeline(
-            "text-generation", 
-            model=model_id, 
-            torch_dtype=torch.bfloat16, 
-            device_map="auto"
-        )
+# =================================================================
+# TASK-1: CORE FUNCTIONS (6 REQUIRED)
+# =================================================================
 
-    def get_pdf_text(self, file_path):
-        """
-        Extracts all text content from the specified PDF file.
-        """
+def load_and_validate_documents(doc_path1, doc_path2):
+    """
+    Function-1: Validates existence and extracts text from two PDF files.
+    """
+    extracted_data = {}
+    for path in [doc_path1, doc_path2]:
+        if not os.path.exists(path):
+            raise FileNotFoundError(f"Missing required file: {path}")
+        
         text = ""
-        if not os.path.exists(file_path):
-            print(f"Error: File {file_path} not found.")
-            return None
-            
-        with pdfplumber.open(file_path) as pdf:
-            for page in pdf.pages:
-                page_text = page.extract_text()
-                if page_text:
-                    text += page_text + "\n"
-        return text
-
-    def build_prompt(self, technique, text_segment):
-        """
-        Constructs the LLM prompt based on the chosen prompting technique.
-        """
-        if technique == "zero-shot":
-            return f"Role: Security Auditor. Task: Extract security requirements from the following text as a list:\n\n{text_segment}"
+        with open(path, 'rb') as f:
+            reader = PyPDF2.PdfReader(f)
+            for page in reader.pages:
+                content = page.extract_text()
+                if content:
+                    text += content + "\n"
         
-        elif technique == "few-shot":
-            return (
-                "Example 1: 'Enable S3 bucket versioning.' -> Requirement: S3 versioning enabled.\n"
-                "Example 2: 'Restrict SSH access to specific IPs.' -> Requirement: SSH restricted.\n"
-                f"Task: Extract requirements from this text: {text_segment}"
-            )
-        
-        elif technique == "cot":
-            return (
-                "Step 1: Identify all security-related policy statements in the text.\n"
-                "Step 2: Summarize them as concise security requirements.\n"
-                f"Text: {text_segment}"
-            )
+        extracted_data[os.path.basename(path)] = text.strip()
+    return extracted_data
 
-    def run_full_task(self, pdf_file):
-        """
-        Runs the extraction using all three techniques and saves results to YAML.
-        """
-        raw_text = self.get_pdf_text(pdf_file)
-        if not raw_text:
-            return
+def construct_zero_shot_prompt(doc_text):
+    """
+    Function-2: Creates a zero-shot prompt for KDE extraction.
+    """
+    return (
+        "TASK: Extract Key Data Elements (KDEs) from text.\n"
+        "FORMAT: YAML list of objects.\n"
+        "SCHEMA: - element1: {name: string, requirements: [string]}\n\n"
+        f"Text: {doc_text}"
+    )
 
-        # Use the first 1500 characters for initial testing
-        context = raw_text[:1500] 
+def construct_few_shot_prompt(doc_text):
+    """
+    Function-3: Creates a few-shot prompt with a structured example.
+    """
+    example = (
+        "Example:\nInput: 'User_IDs must be encrypted.'\nOutput:\n"
+        "- element1:\n    name: User_IDs\n    requirements: ['encrypted']\n\n"
+    )
+    return f"{example}Task: Extract KDEs from:\n{doc_text}"
 
-        techniques = ["zero-shot", "few-shot", "cot"]
-        for tech in techniques:
-            print(f"--- Running {tech} extraction ---")
-            prompt = self.build_prompt(tech, context)
+def construct_chain_of_thought_prompt(doc_text):
+    """
+    Function-4: Creates a Chain of Thought prompt.
+    """
+    return (
+        "1. Identify KDEs.\n2. Map to requirements.\n3. Output YAML.\n"
+        "STRICT: No dashes for names.\n\n"
+        f"Document: {doc_text}\n\n"
+        "Let's think step by step."
+    )
+
+def extract_kdes_with_llm(pipe, prompt, doc_name):
+    """
+    Function-5: Executes LLM inference and saves results to a YAML file.
+    """
+    print(f"    [DEBUG] Starting LLM inference for {doc_name}...")
+    
+    # Use only max_new_tokens to avoid conflict with model config's max_length
+    result = pipe(
+        prompt, 
+        max_new_tokens=512, 
+        do_sample=False, 
+        truncation=True,
+        pad_token_id=pipe.tokenizer.eos_token_id
+    )
+    
+    raw_output = result[0]['generated_text']
+    clean_yaml = raw_output.replace(prompt, "").strip()
+    
+    # Handle markdown markers
+    if "```yaml" in clean_yaml:
+        clean_yaml = clean_yaml.split("```yaml")[-1].split("```")[0]
+
+    output_filename = f"{os.path.splitext(doc_name)[0]}-kdes.yaml"
+    
+    try:
+        data = yaml.safe_load(clean_yaml)
+        with open(output_filename, 'w', encoding='utf-8') as f:
+            yaml.dump(data, f, sort_keys=False, default_flow_style=False)
+        print(f"    [DEBUG] Successfully saved {output_filename}")
+    except Exception as e:
+        print(f"    [WARNING] YAML parsing failed for {doc_name}. Saving raw text.")
+        with open(output_filename, 'w', encoding='utf-8') as f:
+            f.write(clean_yaml)
             
-            # Generate response from LLM
-            output = self.generator(
-                prompt, 
-                max_new_tokens=250, 
-                do_sample=True, 
-                temperature=0.7
-            )
-            result_text = output[0]['generated_text']
+    return clean_yaml
 
-            # Prepare data for YAML storage
-            data = {
-                "course": "COMP 5700/6700",
-                "technique": tech,
-                "source": pdf_file,
-                "extracted_requirements": result_text
-            }
-            
-            output_filename = f"requirements_{tech}.yaml"
-            with open(output_filename, 'w') as f:
-                yaml.dump(data, f, default_flow_style=False)
-            print(f"Successfully saved results to: {output_filename}")
+def collect_output_and_dump(llm_name, prompt_used, p_type, llm_output, log_path):
+    """
+    Function-6: Appends LLM interaction metadata to a central log file.
+    """
+    entry = (
+        f"*LLM Name*\n{llm_name}\n\n"
+        f"*Prompt Used*\n{prompt_used}\n\n"
+        f"*Prompt Type*\n{p_type}\n\n"
+        f"*LLM Output*\n{llm_output}\n"
+        f"{'='*50}\n\n"
+    )
+    with open(log_path, 'a', encoding='utf-8') as f:
+        f.write(entry)
+
+# =================================================================
+# HELPERS & TESTING
+# =================================================================
+
+def generate_prompt_markdown():
+    """Generates the PROMPT.md deliverable."""
+    content = (
+        "# Task-1 Prompt Deliverables\n\n"
+        "## zero-shot\n```text\n" + construct_zero_shot_prompt("[DOC]") + "\n```\n\n"
+        "## few-shot\n```text\n" + construct_few_shot_prompt("[DOC]") + "\n```\n\n"
+        "## chain-of-thought\n```text\n" + construct_chain_of_thought_prompt("[DOC]") + "\n```\n"
+    )
+    with open("PROMPT.md", "w", encoding="utf-8") as f:
+        f.write(content)
+    print("[DEBUG] PROMPT.md written.")
+
+class TestTask1(unittest.TestCase):
+    @patch('os.path.exists', return_value=True)
+    @patch('PyPDF2.PdfReader')
+    def test_f1_load(self, m_reader, m_exists):
+        m_reader.return_value.pages = [MagicMock(extract_text=lambda: "data")]
+        with patch('builtins.open', mock_open()):
+            res = load_and_validate_documents("r1.pdf", "r2.pdf")
+            self.assertEqual(len(res), 2)
+    def test_f2_z(self): self.assertIn("Text", construct_zero_shot_prompt("t"))
+    def test_f3_f(self): self.assertIn("Example", construct_few_shot_prompt("t"))
+    def test_f4_c(self): self.assertIn("step", construct_chain_of_thought_prompt("t"))
+    @patch('builtins.open', new_callable=mock_open)
+    def test_f5_llm(self, m_open):
+        m_p = MagicMock(); m_p.return_value = [{'generated_text': 'e: test'}]; m_p.tokenizer.eos_token_id=2
+        res = extract_kdes_with_llm(m_p, "p", "t.pdf"); self.assertIn("e", res)
+    @patch('builtins.open', new_callable=mock_open)
+    def test_f6_log(self, m_open): collect_output_and_dump("G", "p", "t", "o", "l.txt"); m_open.assert_called()
+
+def run_pipeline(token):
+    generate_prompt_markdown()
+    
+    print("[DEBUG] Loading Gemma-3-1B-it into GPU...")
+    try:
+        # Force specific device to ensuring it uses your 4060 Ti
+        pipe = pipeline(
+            "text-generation", 
+            model="google/gemma-3-1b-it", 
+            token=token, 
+            device=0, # Use first GPU
+            torch_dtype=torch.bfloat16
+        )
+    except Exception as e:
+        print(f"[ERROR] Failed to init LLM: {e}")
+        return
+
+    combinations = [
+        ("cis-r1.pdf", "cis-r1.pdf"), ("cis-r1.pdf", "cis-r2.pdf"),
+        ("cis-r1.pdf", "cis-r3.pdf"), ("cis-r1.pdf", "cis-r4.pdf"),
+        ("cis-r2.pdf", "cis-r2.pdf"), ("cis-r2.pdf", "cis-r3.pdf"),
+        ("cis-r2.pdf", "cis-r4.pdf"), ("cis-r3.pdf", "cis-r3.pdf"),
+        ("cis-r3.pdf", "cis-r4.pdf")
+    ]
+    
+    log_file = "all_llm_outputs.txt"
+    if os.path.exists(log_file): os.remove(log_file)
+
+    llm_cache = {}
+
+    for idx, (f_a, f_b) in enumerate(combinations):
+        print(f"\n[*] STARTING COMBINATION {idx+1}/9: ({f_a}, {f_b})")
+        try:
+            doc_texts = load_and_validate_documents(f_a, f_b)
+            for fname, text in doc_texts.items():
+                if fname not in llm_cache:
+                    # Truncate text if it's too long for 1B model's comfort
+                    truncated_text = text[:3000] # Safe limit for standard context
+                    p_text = construct_chain_of_thought_prompt(truncated_text)
+                    raw_out = extract_kdes_with_llm(pipe, p_text, fname)
+                    llm_cache[fname] = (p_text, raw_out)
+                
+                cached_p, cached_out = llm_cache[filename] if 'filename' in locals() else llm_cache[fname]
+                collect_output_and_dump("Gemma-3-1B", cached_p, "chain-of-thought", cached_out, log_file)
+        except Exception as e:
+            print(f"    [ERROR] Skipping pair: {e}")
+
+    print("\n[SUCCESS] All files and logs generated.")
 
 if __name__ == "__main__":
-    # Ensure the file 'cis-r1.pdf' exists in the same directory
-    extractor = SecurityRequirementsExtractor()
-    extractor.run_full_task("cis-r1.pdf")
+    test_result = unittest.TextTestRunner().run(unittest.TestLoader().loadTestsFromTestCase(TestTask1))
+    if test_result.wasSuccessful():
+        hf_token = input("Enter HF Token: ").strip()
+        if hf_token: run_pipeline(hf_token)
