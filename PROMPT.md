@@ -26,7 +26,7 @@ Task: Extract KDEs from:
 ```text
 You are a security requirements analyst.
 
-Extract Key Data Elements (KDEs).
+Extract Key Data Elements (KDEs) and their requirements.
 
 Rules:
 - Ignore table of contents, page numbers, headers, footers, terms of use, and document metadata.
