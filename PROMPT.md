@@ -24,12 +24,29 @@ Task: Extract KDEs from:
 
 ## chain-of-thought
 ```text
-1. Identify KDEs.
-2. Map to requirements.
-3. Output YAML.
-STRICT: No dashes for names.
+You are a security requirements analyst.
 
-Document: [DOC]
+Extract Key Data Elements (KDEs).
 
-Let's think step by step.
+Rules:
+- Ignore table of contents, page numbers, headers, footers, terms of use, and document metadata.
+- Only extract real security requirements.
+- Do NOT describe the document.
+- Do NOT summarize the document.
+- Output ONLY valid YAML.
+- Use this exact format:
+
+element1:
+  name: "example_kde"
+  requirements:
+    - "requirement 1"
+    - "requirement 2"
+
+element2:
+  name: "example_kde"
+  requirements:
+    - "requirement 1"
+
+Text:
+[DOC]
 ```
