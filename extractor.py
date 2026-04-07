@@ -159,7 +159,7 @@ class TestTask1(unittest.TestCase):
             self.assertEqual(len(res), 2)
     def test_f2_z(self): self.assertIn("Text", construct_zero_shot_prompt("t"))
     def test_f3_f(self): self.assertIn("Example", construct_few_shot_prompt("t"))
-    def test_f4_c(self): self.assertIn("step", construct_chain_of_thought_prompt("t"))
+    def test_f4_c(self): self.assertIn("Output ONLY valid YAML", construct_chain_of_thought_prompt("t"))
     @patch('builtins.open', new_callable=mock_open)
     def test_f5_llm(self, m_open):
         m_p = MagicMock(); m_p.return_value = [{'generated_text': 'e: test'}]; m_p.tokenizer.eos_token_id=2
