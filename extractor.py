@@ -55,12 +55,33 @@ def construct_chain_of_thought_prompt(doc_text):
     """
     Function-4: Creates a Chain of Thought prompt.
     """
-    return (
-        "1. Identify KDEs.\n2. Map to requirements.\n3. Output YAML.\n"
-        "STRICT: No dashes for names.\n\n"
-        f"Document: {doc_text}\n\n"
-        "Let's think step by step."
-    )
+    return f"""
+You are a security requirements analyst.
+
+Extract Key Data Elements (KDEs) and their requirements.
+
+Rules:
+- Ignore table of contents, page numbers, headers, footers, terms of use, and document metadata.
+- Only extract real security requirements.
+- Do NOT describe the document.
+- Do NOT summarize the document.
+- Output ONLY valid YAML.
+- Use this exact format:
+
+element1:
+  name: "example_kde"
+  requirements:
+    - "requirement 1"
+    - "requirement 2"
+
+element2:
+  name: "example_kde"
+  requirements:
+    - "requirement 1"
+
+Text:
+{doc_text}
+"""
 
 def extract_kdes_with_llm(pipe, prompt, doc_name):
     """
