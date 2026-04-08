@@ -58,7 +58,7 @@ def construct_chain_of_thought_prompt(doc_text):
     return f"""
 You are a security requirements analyst.
 
-Extract Key Data Elements (KDEs) and their requirements.
+Extract Key Data Elements (KDEs) and their associated requirements.
 
 Rules:
 - Ignore table of contents, page numbers, headers, footers, terms of use, and document metadata.
