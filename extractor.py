@@ -212,8 +212,8 @@ class TestTask1(unittest.TestCase):
     }]
         m_p.tokenizer.eos_token_id = 2
 
-    res = extract_kdes_with_llm(m_p, "p", "t.pdf")
-    self.assertIn("element1", res)
+        res = extract_kdes_with_llm(m_p, "p", "t.pdf")
+        self.assertIn("element1", res)
     @patch('builtins.open', new_callable=mock_open)
     def test_f6_log(self, m_open): collect_output_and_dump("G", "p", "t", "o", "l.txt"); m_open.assert_called()
 
