@@ -202,8 +202,18 @@ class TestTask1(unittest.TestCase):
     def test_f4_c(self): self.assertIn("Output ONLY valid YAML", construct_chain_of_thought_prompt("t"))
     @patch('builtins.open', new_callable=mock_open)
     def test_f5_llm(self, m_open):
-        m_p = MagicMock(); m_p.return_value = [{'generated_text': 'e: test'}]; m_p.tokenizer.eos_token_id=2
-        res = extract_kdes_with_llm(m_p, "p", "t.pdf"); self.assertIn("e", res)
+        m_p = MagicMock()
+        m_p.return_value = [{
+            'generated_text': '''element1:
+      name: "logging"
+      requirements:
+        - "Enable audit logs"
+    '''
+    }]
+        m_p.tokenizer.eos_token_id = 2
+
+    res = extract_kdes_with_llm(m_p, "p", "t.pdf")
+    self.assertIn("element1", res)
     @patch('builtins.open', new_callable=mock_open)
     def test_f6_log(self, m_open): collect_output_and_dump("G", "p", "t", "o", "l.txt"); m_open.assert_called()
 
