@@ -3,6 +3,7 @@ import yaml
 import PyPDF2
 import unittest
 import torch
+import re
 from transformers import pipeline
 from unittest.mock import patch, mock_open, MagicMock
 
@@ -29,7 +30,15 @@ def load_and_validate_documents(doc_path1, doc_path2):
         
         extracted_data[os.path.basename(path)] = text.strip()
     return extracted_data
-
+    
+def clean_text(text):
+    text = re.sub(r'Page\s+\d+', ' ', text)
+    text = re.sub(r'Terms of Use.*?(?=Overview|Recommendations|1\s+Control Plane Components|2\s+Control Plane Configuration)', ' ', text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r'Table of Contents.*?(?=Overview|Recommendations|1\s+Control Plane Components|2\s+Control Plane Configuration)', ' ', text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r'Internal Only - General', ' ', text)
+    text = re.sub(r'\s+', ' ', text)
+    return text.strip()
+    
 def construct_zero_shot_prompt(doc_text):
     """
     Function-2: Creates a zero-shot prompt for KDE extraction.
@@ -90,33 +99,64 @@ def extract_kdes_with_llm(pipe, prompt, doc_name):
     print(f"    [DEBUG] Starting LLM inference for {doc_name}...")
     
     # Use only max_new_tokens to avoid conflict with model config's max_length
+def extract_kdes_with_llm(pipe, prompt, doc_name):
+    """
+    Function-5: Executes LLM inference and saves results to a YAML file.
+    """
+    print(f"    [DEBUG] Starting LLM inference for {doc_name}...")
+
     result = pipe(
-        prompt, 
-        max_new_tokens=512, 
-        do_sample=False, 
-        truncation=True,
+        prompt,
+        max_new_tokens=512,
+        do_sample=False,
         pad_token_id=pipe.tokenizer.eos_token_id
     )
-    
+
     raw_output = result[0]['generated_text']
     clean_yaml = raw_output.replace(prompt, "").strip()
-    
-    # Handle markdown markers
+
     if "```yaml" in clean_yaml:
-        clean_yaml = clean_yaml.split("```yaml")[-1].split("```")[0]
+        clean_yaml = clean_yaml.split("```yaml", 1)[1].split("```", 1)[0].strip()
+    elif "```" in clean_yaml:
+        clean_yaml = clean_yaml.split("```", 1)[1].strip()
+
+    if "element1:" in clean_yaml:
+        clean_yaml = clean_yaml[clean_yaml.index("element1:"):].strip()
+
+    if "The document is about" in clean_yaml:
+        raise ValueError(f"Bad summary output for {doc_name}")
+
+    if "Data source:" in clean_yaml or "Security focus:" in clean_yaml:
+        raise ValueError(f"Bad summary-style output for {doc_name}")
+
+    if "element1:" not in clean_yaml:
+        raise ValueError(f"No KDE YAML structure found for {doc_name}")
 
     output_filename = f"{os.path.splitext(doc_name)[0]}-kdes.yaml"
-    
+
     try:
         data = yaml.safe_load(clean_yaml)
+
+        if not isinstance(data, dict) or not data:
+            raise ValueError("Parsed YAML is empty or not a dictionary.")
+
+        for key, value in data.items():
+            if not isinstance(value, dict):
+                raise ValueError("Each element must map to a dictionary.")
+            if "name" not in value or "requirements" not in value:
+                raise ValueError("Missing name or requirements field.")
+            if not isinstance(value["requirements"], list):
+                raise ValueError("Requirements must be a list.")
+
         with open(output_filename, 'w', encoding='utf-8') as f:
             yaml.dump(data, f, sort_keys=False, default_flow_style=False)
         print(f"    [DEBUG] Successfully saved {output_filename}")
+
     except Exception as e:
         print(f"    [WARNING] YAML parsing failed for {doc_name}. Saving raw text.")
         with open(output_filename, 'w', encoding='utf-8') as f:
             f.write(clean_yaml)
-            
+
     return clean_yaml
 
 def collect_output_and_dump(llm_name, prompt_used, p_type, llm_output, log_path):
@@ -204,12 +244,13 @@ def run_pipeline(token):
             for fname, text in doc_texts.items():
                 if fname not in llm_cache:
                     # Truncate text if it's too long for 1B model's comfort
+                    cleaned = clean_text(text)
                     truncated_text = text[:3000] # Safe limit for standard context
                     p_text = construct_chain_of_thought_prompt(truncated_text)
                     raw_out = extract_kdes_with_llm(pipe, p_text, fname)
                     llm_cache[fname] = (p_text, raw_out)
                 
-                cached_p, cached_out = llm_cache[filename] if 'filename' in locals() else llm_cache[fname]
+                cached_p, cached_out = llm_cache[fname]
                 collect_output_and_dump("Gemma-3-1B", cached_p, "chain-of-thought", cached_out, log_file)
         except Exception as e:
             print(f"    [ERROR] Skipping pair: {e}")
