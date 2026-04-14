@@ -24,6 +24,7 @@ Task: Extract KDEs from:
 
 ## chain-of-thought
 ```text
+
 You are a security requirements analyst.
 
 Extract Key Data Elements (KDEs) and their associated requirements.
@@ -49,4 +50,5 @@ element2:
 
 Text:
 [DOC]
+
 ```

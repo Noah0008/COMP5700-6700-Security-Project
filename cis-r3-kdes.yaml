@@ -1,74 +1,137 @@
-1. Identify KDEs.
-2. Map to requirements.
-3. Output YAML.
-STRICT: No dashes for names.
-
-The document is about CIS Benchmarks.
-1. Identify KDEs.
-The document is about CIS Benchmarks.
-2. Map to requirements.
-The document is about CIS Benchmarks.
-3. Output YAML.
-The document is about CIS Benchmarks.
-
-The document is about CIS Benchmarks.
-1. Identify KDEs.
-The document is about CIS Benchmarks.
-2. Map to requirements.
-The document is about CIS Benchmarks.
-3. Output YAML.
-The document is about CIS Benchmarks.
-
-The document is about CIS Benchmarks.
-1. Identify KDEs.
-The document is about CIS Benchmarks.
-2. Map to requirements.
-The document is about CIS Benchmarks.
-3. Output YAML.
-The document is about CIS Benchmarks.
-
-The document is about CIS Benchmarks.
-1. Identify KDEs.
-The document is about CIS Benchmarks.
-2. Map to requirements.
-The document is about CIS Benchmarks.
-3. Output YAML.
-The document is about CIS Benchmarks.
-
-The document is about CIS Benchmarks.
-1. Identify KDEs.
-The document is about CIS Benchmarks.
-2. Map to requirements.
-The document is about CIS Benchmarks.
-3. Output YAML.
-The document is about CIS Benchmarks.
-
-The document is about CIS Benchmarks.
-1. Identify KDEs.
-The document is about CIS Benchmarks.
-2. Map to requirements.
-The document is about CIS Benchmarks.
-3. Output YAML.
-The document is about CIS Benchmarks.
-
-The document is about CIS Benchmarks.
-1. Identify KDEs.
-The document is about CIS Benchmarks.
-2. Map to requirements.
-The document is about CIS Benchmarks.
-3. Output YAML.
-The document is about CIS Benchmarks.
-
-The document is about CIS Benchmarks.
-1. Identify KDEs.
-The document is about CIS Benchmarks.
-2. Map to requirements.
-The document is about CIS Benchmarks.
-3. Output YAML.
-The document is about CIS Benchmarks.
-
-The document is about CIS Benchmarks.
-1. Identify KDEs.
-The document is about CIS Benchmarks.
-2. Map to requirements.
-The document
+element1:
+  name: Logging
+  requirements:
+  - "2.1.1: Enable audit Logs (Automated) Profile Applicability: \u2022 Level 1 Description:\
+    \ Control plane logs provide visibility into operation of the EKS Control plane\
+    \ component systems."
+  - "2.1.2: Ensure audit logs are collected and managed (Manual) Profile Applicability:\
+    \ \u2022 Level 1 Description: Ensure that audit logs are collected and managed\
+    \ in accordance with the enterprise\u2019s audit log management process across\
+    \ all Kubernetes components."
+element2:
+  name: Worker_Node_Configuration_Files
+  requirements:
+  - '3.1.1: Ensure that the kubeconfig file permissions are set to 644 or more restrictive
+    (Automated) .'
+  - "3.1.2: Ensure that the kubelet kubeconfig file ownership is set to root:root\
+    \ (Automated) Profile Applicability: \u2022 Level 1 Description: If kubelet is\
+    \ running, ensure that the file ownership of its kubeconfig file is set to root:root\
+    \ ."
+  - '3.1.3: Ensure that the kubelet configuration file has permissions set to 644
+    or more restrictive (Automated) .'
+  - "3.1.4: Ensure that the kubelet configuration file ownership is set to root:root\
+    \ (Automated) Profile Applicability: \u2022 Level 1 Description: Ensure that if\
+    \ the kubelet refers to a configuration file with the --config argument, that\
+    \ file is owned by root:root."
+element3:
+  name: Kubelet
+  requirements:
+  - "3.2.1: Ensure that the Anonymous Auth is Not Enabled (Automated) Profile Applicability:\
+    \ \u2022 Level 1 Description: Disable anonymous requests to the Kubelet server."
+  - "3.2.2: Ensure that the --authorization -mode argument is not set to AlwaysAllow\
+    \ (Automated) Profile Applicability: \u2022 Level 1 Description: Do not allow\
+    \ all requests."
+  - "3.2.4: Ensure that the --read-only-port is disabled (Automated) Profile Applicability:\
+    \ \u2022 Level 1 Description: Disable the read -only port."
+  - "3.2.5: Ensure that the --streaming -connection -idle-timeout argument is not\
+    \ set to 0 (Automated) Profile Applicability: \u2022 Level 1 Description: Do not\
+    \ disable timeouts on streaming connections."
+  - "3.2.6: Ensure that the --make -iptables -util-chains argument is set to true\
+    \ (Automated) Profile Applicability: \u2022 Level 1 Description: Allow Kubelet\
+    \ to manage iptables."
+  - "3.2.7: Ensure that the --eventRecordQPS argument is set to 0 or a level which\
+    \ ensures appropriate event capture (Automated) Profile Applicability: \u2022\
+    \ Level 1 Description: Security relevant information should be captured."
+  - "3.2.8: Ensure that the --rotate -certificates argument is not present or is set\
+    \ to true (Automated) Profile Applicability: \u2022 Level 1 Description: Enable\
+    \ kubelet client certificate rotation."
+  - "3.2.9: Ensure that the RotateKubeletServerCertificate argument is set to true\
+    \ (Automated) Profile Applicability: \u2022 Level 1 Description: Enable kubelet\
+    \ server certificate rotation."
+  - "3.2.3: Ensure that a Client CA File is Configured (Automated) Profile Applicability:\
+    \ \u2022 Level 1 Description: Enable Kubelet authentication using certificates."
+element4:
+  name: RBAC_and_Service_Accounts
+  requirements:
+  - "4.1.1: Ensure that the cluster -admin role is only used where required (Automated)\
+    \ Profile Applicability: \u2022 Level 1 Description: The RBAC role cluster-admin\
+    \ provides wide -ranging powers over the environment and should be used only where\
+    \ and when needed."
+  - "4.1.2: Minimize access to secrets (Automated) Profile Applicability: \u2022 Level\
+    \ 1 Description: The Kubernetes API stores secrets, which may be service account\
+    \ tokens for the Kubernetes API or credentials used by workloads in the cluster."
+  - "4.1.3: Minimize wildcard use in Roles and ClusterRoles (Automated) Profile Applicability:\
+    \ \u2022 Level 1 Description: Kubernetes Roles and ClusterRoles provide access\
+    \ to resources based on sets of objects and actions that can be taken on those\
+    \ objects."
+  - '4.1.4: Minimize access to create pods Date Version Changes for this version 5/11/2024
+    1.'
+  - '4.1.5: Ensure that default service accounts are not actively used 5/11/2024 1.'
+  - '4.1.6: Ensure that Service Account Tokens are only mounted where necessary (Automated)
+    76 4.'
+  - '4.1.8: Limit use of the Bind, Impersonate and Escalate permissions in the Kubernetes
+    cluster (Manual) .'
+element5:
+  name: Pod_Security_Standards
+  requirements:
+  - "4.2.1: Minimize the admission of privileged containers (Automated) Profile Applicability:\
+    \ \u2022 Level 1 Description: Do not generally permit containers to be run with\
+    \ the securityContext."
+  - "4.2.2: Minimize the admission of containers wishing to share the host process\
+    \ ID namespace (Automated) Profile Applicability: \u2022 Level 1 Description:\
+    \ Do not generally permit containers to be run with the hostPID flag set to true."
+  - "4.2.3: Minimize the admission of containers wishing to share the host IPC namespace\
+    \ (Automated) Profile Applicability: \u2022 Level 1 Description: Do not generally\
+    \ permit containers to be run with the hostIPC flag set to true."
+  - "4.2.4: Minimize the admission of containers wishing to share the host network\
+    \ namespace (Automated) Profile Applicability: \u2022 Level 1 Description: Do\
+    \ not generally permit containers to be run with the hostNetwork flag set to true."
+  - "4.2.5: Minimize the admission of containers with allowPrivilegeEscalation (Automated)\
+    \ Profile Applicability: \u2022 Level 1 Description: Do not generally permit containers\
+    \ to be run with the allowPrivilegeEscalation flag set to true ."
+  - '4.2.6: Minimize the admission of root containers 5/12/2024 1.'
+  - '4.2.7: Minimize the admission of containers with added capabilities 5/12/2024
+    1.'
+  - '4.2.8: Minimize the admission of containers with capabilities assigned 5/12/2024
+    1.'
+element6:
+  name: CNI_Plugin
+  requirements:
+  - '4.3.1: Ensure CNI plugin supports network policies.'
+  - "4.3.2: Ensure that all Namespaces have Network Policies defined (Automated) Profile\
+    \ Applicability: \u2022 Level 1 Description: Use network policies to isolate traffic\
+    \ in your cluster network."
+element7:
+  name: Image_Registry_and_Image_Scanning
+  requirements:
+  - "5.1.1: Ensure Image Vulnerability Scanning using Amazon ECR image scanning or\
+    \ a third party provider (Automated) Profile Applicability: \u2022 Level 1 Description:\
+    \ Scan images being deployed to Amazon EKS for vulnerabilities."
+  - "5.1.2: Minimize user access to Amazon ECR (Manual) Profile Applicability: \u2022\
+    \ Level 1 Description: Restrict user access to Amazon ECR, limiting interaction\
+    \ with build images to only authorized personnel and service accounts."
+  - "5.1.3: Minimize cluster access to read -only for Amazon ECR (Manual) Profile\
+    \ Applicability: \u2022 Level 1 Description: Configure the Cluster Service Account\
+    \ with Storage Object Viewer Role to only allow read-only access to Amazon ECR."
+  - "5.1.4: Minimize Container Registries to only those approved (Manual) Profile\
+    \ Applicability: \u2022 Level 1 Description: Use approved container registries."
+element8:
+  name: AWS_EKS_Key_Management_Service
+  requirements:
+  - '5.3.1: Ensure Kubernetes Secrets are encrypted using Customer Master Keys (CMKs)
+    managed in AWS KMS (Manual) .'
+element9:
+  name: Cluster_Networking
+  requirements:
+  - "5.4.1: Restrict Access to the Control Plane Endpoint (Automated) Profile Applicability:\
+    \ \u2022 Level 1 Description: Enable Endpoint Private Access to restrict access\
+    \ to the cluster's control plane to only an allowlist of authorized IPs."
+  - "5.4.2: Ensure clusters are created with Private Endpoint Enabled and Public Access\
+    \ Disabled (Automated) Profile Applicability: \u2022 Level 1 Description: Disable\
+    \ access to the Kubernetes API from outside the node network if it is not required."
+  - "5.4.3: Ensure clusters are created with Private Nodes (Automated) Profile Applicability:\
+    \ \u2022 Level 1 Description: Disable public IP addresses for cluster nodes, so\
+    \ that they only have private IP addresses."
+  - "5.4.4: Ensure Network Policy is Enabled and set as appropriate (Automated) Profile\
+    \ Applicability: \u2022 Level 1 Description: Amazon EKS provides two ways to implement\
+    \ network policy."
