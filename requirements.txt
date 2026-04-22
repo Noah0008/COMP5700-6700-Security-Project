@@ -44,6 +44,7 @@ pycparser==3.0
 Pygments==2.20.0
 pypdfium2==5.6.0
 python-dateutil==2.9.0.post0
+PyPDF2==3.0.1
 PyYAML==6.0.3
 regex==2026.3.32
 requests==2.33.1
