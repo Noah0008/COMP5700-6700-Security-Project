@@ -4,6 +4,8 @@ import subprocess
 import pandas as pd
 import argparse
 import sys
+import unittest
+from unittest.mock import patch, MagicMock
 
 class Config:
     """Centralized configuration to avoid hard-coding."""
@@ -130,5 +132,38 @@ def main():
     else:
         print("\n[WARNING] No relevant differences found to analyze.")
 
+class TestTask3(unittest.TestCase):
+    def test_calculate_metrics_none(self):
+        score, passed, failed = calculate_metrics(None)
+        self.assertEqual(score, 0)
+        self.assertEqual(passed, 0)
+        self.assertEqual(failed, 0)
+
+    def test_calculate_metrics_with_data(self):
+        mock_data = {
+            "summaryDetails": {
+                "score": 75.5,
+                "passedResources": 8,
+                "failedResources": 3
+            }
+        }
+        score, passed, failed = calculate_metrics(mock_data)
+        self.assertEqual(score, 75.5)
+        self.assertEqual(passed, 8)
+        self.assertEqual(failed, 3)
+
+    def test_run_security_scan_missing_dir(self):
+        result = run_security_scan("/nonexistent/path/xyz")
+        self.assertIsNone(result)
+
+    @patch("subprocess.run")
+    @patch("os.path.exists", return_value=False)
+    def test_run_security_scan_no_output_file(self, mock_exists, mock_run):
+        result = run_security_scan("./project-yamls")
+        self.assertIsNone(result)
+
+
 if __name__ == "__main__":
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestTask3)
+    unittest.TextTestRunner(verbosity=1).run(suite)
     main()
