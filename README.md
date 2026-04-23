@@ -35,6 +35,7 @@ All core components are located in the root directory for easy access and execut
 Clone this repository and install the dependencies:
 ```bash
 pip install -r requirements.txt
+```
 
 ## Binary Executable
 A standalone binary is provided for Task-4 to allow execution without a full Python environment setup. Due to GitHub's 100MB file size limit, it is hosted in the Releases section.
