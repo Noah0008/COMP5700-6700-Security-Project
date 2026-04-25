@@ -1,0 +1,30 @@
+# cis-r1-kdes.yaml vs cis-r1-kdes.yaml
+NO DIFFERENCES IN REGARDS TO ELEMENT NAMES
+
+# cis-r1-kdes.yaml vs cis-r2-kdes.yaml
+Pod_Security_Policies,ABSENT-IN-cis-r2-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,NA
+Pod_Security_Standards,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r2-kdes.yaml,NA
+
+# cis-r1-kdes.yaml vs cis-r3-kdes.yaml
+Pod_Security_Policies,ABSENT-IN-cis-r3-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,NA
+Pod_Security_Standards,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r3-kdes.yaml,NA
+
+# cis-r1-kdes.yaml vs cis-r4-kdes.yaml
+Pod_Security_Policies,ABSENT-IN-cis-r4-kdes.yaml,PRESENT-IN-cis-r1-kdes.yaml,NA
+Pod_Security_Standards,ABSENT-IN-cis-r1-kdes.yaml,PRESENT-IN-cis-r4-kdes.yaml,NA
+
+# cis-r2-kdes.yaml vs cis-r2-kdes.yaml
+NO DIFFERENCES IN REGARDS TO ELEMENT NAMES
+
+# cis-r2-kdes.yaml vs cis-r3-kdes.yaml
+NO DIFFERENCES IN REGARDS TO ELEMENT NAMES
+
+# cis-r2-kdes.yaml vs cis-r4-kdes.yaml
+NO DIFFERENCES IN REGARDS TO ELEMENT NAMES
+
+# cis-r3-kdes.yaml vs cis-r3-kdes.yaml
+NO DIFFERENCES IN REGARDS TO ELEMENT NAMES
+
+# cis-r3-kdes.yaml vs cis-r4-kdes.yaml
+NO DIFFERENCES IN REGARDS TO ELEMENT NAMES
+
