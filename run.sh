@@ -1,4 +1,3 @@
-
 #!/bin/bash
 set -e
 
@@ -42,11 +41,11 @@ echo "[*] Running Task-2: Comparator..."
 python3 comparator.py
 
 echo "[*] Running Task-3: Executor..."
-python3 executor.py
+python3 executor.py --names names_diff.txt --reqs requirements_diff.txt
 
 echo "======================================================"
 echo "  Done. Outputs: YAML files, all_llm_outputs.txt,"
-echo "  comparison_summary.json, compliance_report.csv"
+echo "  names_diff.txt, requirements_diff.txt, compliance_report.csv"
 echo "======================================================"
 
 deactivate
