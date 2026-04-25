@@ -6,7 +6,7 @@
   
 - Name: Francis Collopy
 - Email: fpc0005@auburn.edu
-- 
+
 ## LLM Used for Task-1
 - Model: Gemma-3-1B (google/gemma-3-1b-it)
 
