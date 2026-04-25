@@ -6,6 +6,9 @@
   
 - Name: Francis Collopy
 - Email: fpc0005@auburn.edu
+- 
+## LLM Used for Task-1
+- Model: Gemma-3-1B (google/gemma-3-1b-it)
 
 ## Project Overview
 This project provides an automated pipeline to bridge the gap between static security compliance documents (CIS Benchmarks) and live Kubernetes configurations. It automates the extraction of security rules, version comparison, and real-world compliance scanning.
