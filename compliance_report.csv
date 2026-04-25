@@ -1,40 +1,8 @@
-Comparison_Pair,KDE_Name,Compliance_Score,Passed_Resources,Failed_Resources,Scan_Status
-cis-r1-kdes.yaml_vs_cis-r2-kdes.yaml,Pod_Security_Standards,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r2-kdes.yaml,Image_Registry_and_Image_Scanning,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r2-kdes.yaml,Logging,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r2-kdes.yaml,Cluster_Networking,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r2-kdes.yaml,RBAC_and_Service_Accounts,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r2-kdes.yaml,Kubelet,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r2-kdes.yaml,CNI_Plugin,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r2-kdes.yaml,Worker_Node_Configuration_Files,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r3-kdes.yaml,Pod_Security_Standards,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r3-kdes.yaml,Image_Registry_and_Image_Scanning,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r3-kdes.yaml,Logging,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r3-kdes.yaml,Cluster_Networking,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r3-kdes.yaml,RBAC_and_Service_Accounts,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r3-kdes.yaml,Kubelet,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r3-kdes.yaml,CNI_Plugin,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r3-kdes.yaml,Worker_Node_Configuration_Files,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r4-kdes.yaml,Pod_Security_Standards,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r4-kdes.yaml,Image_Registry_and_Image_Scanning,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r4-kdes.yaml,Logging,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r4-kdes.yaml,Cluster_Networking,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r4-kdes.yaml,RBAC_and_Service_Accounts,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r4-kdes.yaml,Kubelet,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r4-kdes.yaml,CNI_Plugin,26.96%,0,0,Passed
-cis-r1-kdes.yaml_vs_cis-r4-kdes.yaml,Worker_Node_Configuration_Files,26.96%,0,0,Passed
-cis-r2-kdes.yaml_vs_cis-r3-kdes.yaml,RBAC_and_Service_Accounts,26.96%,0,0,Passed
-cis-r2-kdes.yaml_vs_cis-r4-kdes.yaml,Image_Registry_and_Image_Scanning,26.96%,0,0,Passed
-cis-r2-kdes.yaml_vs_cis-r4-kdes.yaml,Pod_Security_Standards,26.96%,0,0,Passed
-cis-r2-kdes.yaml_vs_cis-r4-kdes.yaml,RBAC_and_Service_Accounts,26.96%,0,0,Passed
-cis-r2-kdes.yaml_vs_cis-r4-kdes.yaml,Cluster_Networking,26.96%,0,0,Passed
-cis-r2-kdes.yaml_vs_cis-r4-kdes.yaml,Kubelet,26.96%,0,0,Passed
-cis-r2-kdes.yaml_vs_cis-r4-kdes.yaml,CNI_Plugin,26.96%,0,0,Passed
-cis-r2-kdes.yaml_vs_cis-r4-kdes.yaml,Worker_Node_Configuration_Files,26.96%,0,0,Passed
-cis-r3-kdes.yaml_vs_cis-r4-kdes.yaml,Image_Registry_and_Image_Scanning,26.96%,0,0,Passed
-cis-r3-kdes.yaml_vs_cis-r4-kdes.yaml,Pod_Security_Standards,26.96%,0,0,Passed
-cis-r3-kdes.yaml_vs_cis-r4-kdes.yaml,RBAC_and_Service_Accounts,26.96%,0,0,Passed
-cis-r3-kdes.yaml_vs_cis-r4-kdes.yaml,Cluster_Networking,26.96%,0,0,Passed
-cis-r3-kdes.yaml_vs_cis-r4-kdes.yaml,Kubelet,26.96%,0,0,Passed
-cis-r3-kdes.yaml_vs_cis-r4-kdes.yaml,CNI_Plugin,26.96%,0,0,Passed
-cis-r3-kdes.yaml_vs_cis-r4-kdes.yaml,Worker_Node_Configuration_Files,26.96%,0,0,Passed
+FilePath,Severity,Control name,Failed resources,All Resources,Compliance score
+D:\Comp5700-6700project\COMP5700-6700-Security-Project\project-yamls,High,C-0001: Forbidden Container Registries,0,0,0%
+D:\Comp5700-6700project\COMP5700-6700-Security-Project\project-yamls,Medium,C-0002: Prevent containers from allowing command execution,60,914,93.44%
+D:\Comp5700-6700project\COMP5700-6700-Security-Project\project-yamls,Medium,C-0016: Allow privilege escalation,283,386,26.68%
+D:\Comp5700-6700project\COMP5700-6700-Security-Project\project-yamls,Medium,C-0030: Ingress and Egress blocked,338,422,19.91%
+D:\Comp5700-6700project\COMP5700-6700-Security-Project\project-yamls,Medium,C-0035: Administrative Roles,22,914,97.59%
+D:\Comp5700-6700project\COMP5700-6700-Security-Project\project-yamls,High,C-0046: Insecure capabilities,8,385,97.92%
+D:\Comp5700-6700project\COMP5700-6700-Security-Project\project-yamls,High,C-0057: Privileged container,18,385,95.32%
